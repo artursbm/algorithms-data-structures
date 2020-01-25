@@ -1,3 +1,4 @@
+target/
 .idea/**
 algorithms-data-structures.iml
-**/.DS_Store
+**/*.DS_Store

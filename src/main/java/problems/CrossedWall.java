@@ -5,6 +5,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * @author Artur Mello
+ * * * * * 25 Jan 2020 * * * * *
+ * <p>
+ * This program takes an array of arrays, which describes a wall with bricks that has integer sizes, and are placed in a way that all
+ * rows of the wall has the same length. The main goal of this program is to find the line that crosses the least number of bricks on the
+ * wall.
+ * <p>
+ * This implementation focuses on finding the maximum number of edges crossed, which will minimize the number of bricks crossed by the line.
+ * Considering that the array of arrays, or the wall, contains N rows and M bricks in each row, the complexity in
+ * Big-O notation will be O(N*M) for this implementation.
+ * <p>
+ * This program will assume that the wall will always have less than 20000 bricks (elements in the "matrix"), and it's rows or columns
+ * won't exceed 10000 elements each.
+ */
 public class CrossedWall {
     public static void main(String[] args) {
 
