@@ -1,0 +1,15 @@
+## BTG Coding Challenge - Análise de Complexidade
+
+O problema analisado tem como objetivo encontrar o menor número de tijolos cortados por uma linha reta vertical em um muro. O muro é dado por um array de arrays, e o número de tijolos por linha do muro pode variar, mas sua largura total sempre é a mesma.
+
+Para implementar a solução, foi utilizada a linguagem `Java`. A solução funciona como um problema de otimização: é pedido o menor número de tijolos cortados pela linha vertical que cruza o muro. Assim, a solução deste problema pode ser entendida como encontrar o máximo número de arestas cortadas pela mesma linha.
+
+A solução implementada realiza uma transformação na estrutura de dados inicial: Dado um array de arrays (o muro), criei um array unidimensional que contém todos os elementos (tijolos) do muro, sem separação por linhas. Assim, o array com dimensão `1 x N` terá todos os elementos do array de arrays. Essa operação foi realizada com a função `addAll` da biblioteca Collections do Java, sendo que ArrayList implementa esta função. Como ela cria uma cópia ao fim do array existente, tem-se que a performance de execução dessa etapa é O(m), sendo `m` o número de arrays dentro do array muro, ou seja, o número de linhas do muro (sua altura). 
+
+O muro possui `A` arestas, sendo `A = (comprimento do muro + 1)`. A primeira e última arestas serão desconsideradas do algoritmo, conforme especificado na descrição do problema. Como exemplo, um muro cujo comprimento é 6 e os tijolos têm tamanho mínimo unitário, possui 7 possíveis arestas, considerando as bordas deste muro.
+
+O algoritmo segue então iterando sobre o novo vetor, `lineWall`. Cada iteração tem uma checagem que controla em que ponto do muro original o ponteiro está passando. Um vetor `edgeCuts` contabiliza em qual posição das `A` possíveis arestas o tijolo atual possui uma aresta. Quando essa posição é calculada, por exemplo, posição `e`, `edgeCuts[e] += 1`. Caso a checagem identifique que o tamanho do muro foi violado, a _flag_ indicando a posição atual do vetor de arestas possíveis é zerada, levando este contador de arestas para seu início.
+
+Ao final das iterações, `edgeCuts` terá em cada posição o número de arestas cortadas pelas virtuais linhas verticais que cortam o muro. Como as bordas devem ser desconsideradas, é dado a elas o valor mínimo de um inteiro. O vetor é então ordenado, e o máximo número de arestas cortadas é subtraído da altura do muro, ou seja, da quantidade de linhas que este possui. Isso significa que o muro terá o menor número de tijolos cortados pela linha na posição em que o maior número de arestas forem cruzadas pela mesma linha.
+
+#### Como este algoritmo executa iterando principalmente sobre cada tijolo do muro, ou seja, sobre cada elemento de `lineWall`, e dado que este vetor possui `N` elementos, a complexidade Big-O em função do tempo para esta solução é O(N).
