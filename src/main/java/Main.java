@@ -1,8 +1,10 @@
-import problems.MDC;
+import problems.StockPriceII;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        StockPriceII stockPrice = new StockPriceII();
+        int[] prices = new int[] {7,6,4,3,1};
+        System.out.println(stockPrice.maxProfit(prices));
     }
 }
