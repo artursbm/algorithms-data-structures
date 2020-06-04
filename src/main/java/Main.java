@@ -1,10 +1,15 @@
+import problems.MoveZeroes;
+import problems.PlusOne;
 import problems.StockPriceII;
 
 public class Main {
 
     public static void main(String[] args) {
-        StockPriceII stockPrice = new StockPriceII();
-        int[] prices = new int[] {7,6,4,3,1};
-        System.out.println(stockPrice.maxProfit(prices));
+        MoveZeroes mz = new MoveZeroes();
+        int[] teste = {4,2,4,0,0,3,0,5,1,0};
+        mz.moveZeroes(teste);
+        for (int t : teste) {
+            System.out.println(t);
+        }
     }
 }
