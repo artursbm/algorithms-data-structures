@@ -2,7 +2,7 @@ package problems;
 
 import java.util.*;
 
-public class Solution {
+public class ToyPopularity {
 
     public ArrayList<String> popularNToys(int numToys,
                                           int topToys,
