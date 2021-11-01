@@ -1,0 +1,17 @@
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/LearningCSharp.deps.json
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/LearningCSharp.runtimeconfig.json
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/LearningCSharp.runtimeconfig.dev.json
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/LearningCSharp.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/LearningCSharp.pdb
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.csprojAssemblyReference.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.AssemblyInfoInputs.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.AssemblyInfo.cs
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.csproj.CoreCompileInputs.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.pdb
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.genruntimeconfig.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/MoreLinq.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/obj/Debug/netcoreapp3.1/LearningCSharp.csproj.CopyComplete
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/AutoFixture.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/LearningCSharp/bin/Debug/netcoreapp3.1/Fare.dll
