@@ -1,0 +1,15 @@
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/bin/Debug/net5.0/AlgAndDsProblems.deps.json
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/bin/Debug/net5.0/AlgAndDsProblems.runtimeconfig.json
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/bin/Debug/net5.0/AlgAndDsProblems.runtimeconfig.dev.json
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/bin/Debug/net5.0/AlgAndDsProblems.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/bin/Debug/net5.0/ref/AlgAndDsProblems.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/bin/Debug/net5.0/AlgAndDsProblems.pdb
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.csprojAssemblyReference.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.GeneratedMSBuildEditorConfig.editorconfig
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.AssemblyInfoInputs.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.AssemblyInfo.cs
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.csproj.CoreCompileInputs.cache
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/ref/AlgAndDsProblems.dll
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.pdb
+/Users/artursbm/Git/learning-c-sharp/LearningCSharp/AlgAndDsProblems/obj/Debug/net5.0/AlgAndDsProblems.genruntimeconfig.cache
