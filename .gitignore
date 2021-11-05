@@ -1,6 +1,6 @@
 target/
-.idea/**
+**/*.idea/**
 algorithms-data-structures.iml
 **/*.DS_Store
-**/*obj/**
-**/*bin/**
+**/*/obj/**
+**/*/bin/**
