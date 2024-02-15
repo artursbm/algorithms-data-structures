@@ -1,4 +1,4 @@
-package problems;
+package problems.arrays;
 
 /**
  * Given a sorted array nums, remove the duplicates in-place
@@ -16,11 +16,11 @@ public class RemoveDuplicates {
             if (j < nums.length) {
                 if (nums[i] == nums[j]) {
                     j++;
-                } else {
+                }
+                else {
                     len++;
                     nums[++i] = nums[j];
                     j++;
-
                 }
             } else break;
         }

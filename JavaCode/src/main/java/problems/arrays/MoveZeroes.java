@@ -1,4 +1,4 @@
-package problems;
+package problems.arrays;
 
 public class MoveZeroes {
 
