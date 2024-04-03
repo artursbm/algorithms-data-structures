@@ -15,7 +15,6 @@ public class ReverseNodesInKGroups {
         while (ki < k) {
           l.next = prev;
           prev = next;
-          curr
           ki++;
         }
         l = l.next;
