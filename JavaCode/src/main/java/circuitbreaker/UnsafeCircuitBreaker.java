@@ -21,8 +21,12 @@ import java.util.List;
  *   <li>fallback strategy: a strategy to handle open state - how will the system respond when the CB is in open state</li>
  *   <li>reset strategy: a strategy to manually reset the state of the system - for maintenance purposes, for example</li>
  * </ul>
+ * <p>
+ * A Circuit Breaker needs to "monitor" the function it is calling. Therefore, it needs to "decorate" it, which means
+ * it should run before the function execution to check the current state and act accordingly, and if the function
+ * can execute, run after the function execution to gather information for the next function call
  **/
-public class CircuitBreaker {
+public class UnsafeCircuitBreaker {
 
     // current state of the CB instance
     @Getter
@@ -57,7 +61,7 @@ public class CircuitBreaker {
 
 
     // create the CB with state CLOSED - assume service working
-    public CircuitBreaker(int timeout) {
+    public UnsafeCircuitBreaker(int timeout) {
         this.state = StateEnum.CLOSED;
         this.failedRequestsCount = 0;
         this.TIMEOUT = timeout;
@@ -125,6 +129,15 @@ public class CircuitBreaker {
         }
     }
 
+    public void handlePreRequest() {
+        if (this.state.equals(StateEnum.OPEN)) {
+            var waitedTime = Instant.now().getEpochSecond() - this.openInstant;
+            throw new IllegalStateException(String.format(
+                    "System is unavailable. Try again in %d seconds",
+                    (TIMEOUT - waitedTime)));
+        }
+    }
+
     public void handleStateAfterServiceResponse(int responseStatus) {
         switch (this.state) {
             case CLOSED -> {
@@ -146,7 +159,6 @@ public class CircuitBreaker {
                     }
                 }
             }
-
             case HALF_OPEN -> {
                 if (List.of(200, 201, 202, 204).contains(responseStatus)) {
                     increaseSuccessfulTriedRequests();
